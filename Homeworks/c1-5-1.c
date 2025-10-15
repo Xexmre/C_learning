@@ -1,3 +1,5 @@
+/* 使用了文件读取的方式输入 */
+
 #include <stdio.h>
 
 int main(void){
