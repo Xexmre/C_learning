@@ -2,14 +2,18 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{
     int a, b;
-    printf("[input]请输入两个数，并用空格分隔：");
+    printf("[input]请输入两个数，并用空格分隔: ");
     scanf("%d %d", &a, &b);
-    if (a >= b){
-        printf("[output]更大的数字是：%d\n", a);
-    } else {
-        printf("[output]更大的数字是：%d\n", b);
+    if (a >= b)
+    {
+        printf("[output]更大的数字是: %d\n", a);
+    }
+    else
+    {
+        printf("[output]更大的数字是: %d\n", b);
     }
     return 0;
 }
