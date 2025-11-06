@@ -2,7 +2,7 @@
 #include <math.h>
 int main(void)
 {
-    int input_num, scan_return;
+    int input_num, scan_return,digit;
     printf("[input]\t输入一个不多于5位的正整数：");
     scan_return = scanf("%d", &input_num);
     printf("[info]\t当前输入的正整数是：%d\n", input_num);
@@ -24,10 +24,19 @@ int main(void)
         return -1;
     }
     /* 判断数位 */
-    /* 打印各位数字 */
-    for (int i = 0; i <= 4; ++i)
+    if (((input_num / 10000) % 10) != 0)
     {
-        printf("[out]\t第%d位数字为：%d\n", i + 1, (int)(input_num / pow(10, i)) % 10);
-    }
+        digit = 5;
+    } else if(((input_num / 1000) % 10) != 0) {
+        digit = 4;
+    } else if(((input_num / 100) % 10) != 0) {
+        digit = 3;
+    } else if(((input_num / 10) % 10) != 0) {
+        digit = 2;
+    } else if(((input_num / 1) % 10) != 0) {
+        digit = 1;
+    printf("%d\n",digit);
+    /* 打印各位数字 */
+    
     return 0;
 }
