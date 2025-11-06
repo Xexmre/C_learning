@@ -1,17 +1,13 @@
 #include <stdio.h>
-#define STYLE_INFO "\033[0;30m"
-#define STYLE_ERROR "\033[0;31m"
-#define STYLE_RESET "\033[0m"
+#include <math.h>
 
 int main(void)
 {
     double h, w, t;
-    printf("[input]\t输入身高和体重: ");
+    printf("输入身高和体重: ");
     scanf("%lf%lf", &h, &w);
-    printf(STYLE_INFO "[info]\t身高: %.2lf  体重: %.2lf\n" STYLE_RESET, h, w);
     t = w / (h * h);
-    printf(STYLE_INFO "[info]\t体指数: %.2lf\n" STYLE_RESET, t);
-    printf("[done]\t体重类型: ");
+    printf("体重类型: ");
     if (t < 18)
     {
         printf("低体重\n");
