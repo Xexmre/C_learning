@@ -24,17 +24,31 @@ int main(void)
         printf("[error]\t成绩无效：不可小于0");
         return -1;
     }
-    /* 使用if-else完成逻辑 */
-    if (score >= 90)
+    /* 使用switch完成逻辑 */
+    switch ((int)(score / 10))
+    {
+    case 10:
+    case 9:
         class = 'A';
-    if (score >= 80)
+        break;
+    case 8:
         class = 'B';
-    if (score >= 70)
+        break;
+    case 7:
         class = 'C';
-    if (score >= 60)
+        break;
+    case 6:
         class = 'D';
-    else
+        break;
+    case 5:
+    case 4:
+    case 3:
+    case 2:
+    case 1:
+    case 0:
         class = 'E';
+        break;
+    }
     printf("[done]\t成绩为：%c", class);
     return 0;
 }
