@@ -40,7 +40,7 @@ int main(void)
 /* 规则1: 2件8.5折，≥3件7折 */
 double rule1(int n)
 {
-    double off_perc;
+    double off_perc = 1;
     if (n == 2)
     {
         off_perc = 0.85;
