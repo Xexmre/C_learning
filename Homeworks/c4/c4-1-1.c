@@ -3,7 +3,7 @@
 int main(void)
 {
     int a, b;
-    printf("请输入a和b的值：");
+    printf("请输入a和b的值: ");
     scanf("%d%d", &a, &b);
     if (a < b)
     {

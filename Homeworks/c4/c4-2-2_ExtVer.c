@@ -10,7 +10,7 @@ int main(void)
         leap = 1;
     else
         leap = 0;
-    /* 超纲写法：三目表达式 */
+    /* 超纲写法: 三目表达式 */
     printf(leap ? "%d is a leap year\n" : "%d is not a leap year\n", year);
     return 0;
 }

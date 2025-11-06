@@ -2,7 +2,7 @@
 int main(void)
 {
     int x, y;
-    printf("请输入x：");
+    printf("请输入x: ");
     scanf("%d", &x);
     if (x < 1)
         y = x;

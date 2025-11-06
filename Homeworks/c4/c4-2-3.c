@@ -2,7 +2,7 @@
 int main()
 {
     float x, y;
-    printf("请输入x的值：");
+    printf("请输入x的值: ");
     scanf("%f", &x);
     if (x >= 0)
         y = x + 1;
