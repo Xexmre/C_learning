@@ -3,6 +3,7 @@
 int main(void)
 {
     char ch[10];
+    scanf("%s", ch);
     for (int i = 0; i < 10; ++i)
     {
         ch[i] = 0;
