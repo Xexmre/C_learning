@@ -1,0 +1,26 @@
+#include <math.h>
+#include <stdio.h>
+int main()
+{
+    int n=0, m=0, t=0;
+    printf("Please enter two numbers:");
+    scanf("%d,%d", &n, &m);
+    if (n < m)
+    {
+        t = n;
+        n = m;
+        m = t;
+    }
+    t = n % m;
+    /************found************/
+    while (t != 0)
+    {
+        n = m;
+        m = t;
+        /************found************/
+        t = n % m;
+    }
+    /************found************/
+    printf("The greatest common divisor is : %d\n", m);
+    return 0;
+}
