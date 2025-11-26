@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAX 20
-int main(void)
+int main()
 {
     int a, b = 1, c = 1;
     double sum = 0.0;
