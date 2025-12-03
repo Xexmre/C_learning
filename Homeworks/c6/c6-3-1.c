@@ -60,7 +60,7 @@ int main()
         if (cheat_mode)
             printf("%d", ans);
         if (debug_mode)
-                printf("\t%d retries", temp);
+            printf("\t%d retries", temp);
         printf("\n");
     }
     return 0;
